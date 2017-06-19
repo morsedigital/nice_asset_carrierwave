@@ -45,7 +45,7 @@ module NiceAssetCarrierwave
   end
 
   def nice_asset_uploader(a)
-    @nice_asset_uploader ||= a.send(nice_asset_uploader_name)
+    a.send(nice_asset_uploader_name)
   end
 
   def nice_asset_uploader_name
